@@ -1,0 +1,38 @@
+.react-media-grid{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+.react-media-grid-item{
+  background-color: grey;
+  border: 1px solid black;
+  margin: 10px;
+}
+
+.react-media-grid-item-youtube{
+  margin: 10px;
+}
+
+@media screen and (max-width: 960px) {
+  .react-media-grid-item-youtube{
+    position: relative;
+    padding-bottom: 56.25%;
+    height: 0;
+    width: 100%;
+    overflow: hidden;
+    margin: 10px;
+  }
+
+  .react-media-grid-item-youtube iframe,
+  .react-media-grid-item-youtube object,
+  .react-media-grid-item-youtube embed {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+  }
+}
